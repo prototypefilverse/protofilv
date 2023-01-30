@@ -15,20 +15,20 @@
 
    <div class="header_bar">
 
-    <h1 ><a class="main_title" >FIlVerse</a></h1>
-
+    <h1 ><%= link_to 'FIlVerse', "#", class: "main_title" %></h1>
+  
     <div class="top-button">
 
      <div class="button">
-      <a class="my-page" >マイページ</a>
+      <%= link_to 'マイページ', "#", class: "my-page" %>
      </div>
 
      <div class="button">
-      <a class="logout" >ログアウト</a>
+      <%= link_to '映画検索', "#", class: "movie-search" %>
      </div>
 
      <div class="button">
-      <a class="movie-search" >映画検索</a>
+      <%= link_to 'ログアウト', "#", class: "logout" %>
      </div>
 
     </div>
@@ -47,3 +47,6 @@
 
 </html>
 
+
+ 
+ 
