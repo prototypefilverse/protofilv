@@ -1,15 +1,15 @@
   <div class="filv_status">
 
-  
+    <img src="<%= @filv.avatar_image %>">
     
     <div class="yuusya_image">
-  
+     <%= link_to image_tag("yuusya.png", size:"250x250" ), "#" %>
     </div> 
 
     <div class="status">
-      <p class="status__title">Strength: </p>
-      <p class="status__title">Intelligence: </p>
-      <p class="status__title">Charisma: </p>
+      <p class="status__title">Strength: <%= @filv.strength %></p>
+      <p class="status__title">Intelligence: <%= @filv.intelligence %></p>
+      <p class="status__title">Charisma: <%= @filv.charisma %></p>
     </div> 
 
   </div>
