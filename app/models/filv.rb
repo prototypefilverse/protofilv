@@ -1,0 +1,2 @@
+class Filv < ApplicationRecord
+end

@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Protofilv</title>
+    <title>ProtoFilv</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+
+  <header class="header">
+
+   <div class="header_bar">
+
+    <h1 ><a class="main_title" href="/">FIlVerse</a></h1>
+
+    <div class="top-button">
+
+     <div class="button">
+      <a class="my-page" href="/">マイページ</a>
+     </div>
+
+     <div class="button">
+      <a class="logout" href="/">ログアウト</a>
+     </div>
+
+     <div class="button">
+      <a class="movie-search" href="/">映画検索</a>
+     </div>
+
+    </div>
+
+   </header>
+
+
+
+  <%= yield %>
+
+  <footer>
+  <p>Copyright FilVerse 2023.</p>
+  </footer>
+
   </body>
+
 </html>
+

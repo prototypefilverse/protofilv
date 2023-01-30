@@ -1,0 +1,127 @@
+header {
+  background-color: rgb(161, 232, 210);
+  padding: 20px;
+  text-align: center;
+}
+
+.header_bar {
+  display: flex;
+  align-items: center;
+  }
+
+header h1 {
+  margin: 0 0 0 60px;
+}
+
+.main_title {
+  font-size: 48px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px rgb(79, 66, 66);
+  color: #fff;
+  text-decoration: none;
+  }
+
+.top-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+ }
+
+.my-page, .movie-search, .logout {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(126, 121, 121);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none;
+  }
+  
+
+  
+  footer {
+    background-color: rgb(161, 232, 210);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    }
+  
+  
+  .wrapper {
+  display: flex;
+  }
+  .avatar-side {
+  background-color: #dbdffc;
+  width: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  }
+  .reviews-side {
+  background-color: #f9d69a;
+  width: calc(100vw - 500px);
+  padding: 50px;
+  }
+  
+  .filv_status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  
+  .yuusya_image {
+  margin-top: 30px;
+  }
+  
+  .status {
+    margin-top: 30px;
+font-size: 20px;
+font-weight: normal;
+    text-align: center;
+    background-color: #e4e6f2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #333;
+    }
+  
+    .status__title {
+      margin-bottom: 10px;
+      text-indent: 10px;
+      font-size: 18px;
+      font-style: italic;
+      }
+      
+      .status__value {
+      font-size: 30px;
+      color: #333;
+      }
+
+  .reviews {
+  text-align: center;
+  }
+  
+  .reviews__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  }
+  
+  .reviews__message {
+  margin-top: 20px;
+  font-size: 20px;
+  }
+
+  
