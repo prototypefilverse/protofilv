@@ -33,7 +33,7 @@ header h1 {
   margin-left: auto;
  }
 
-.my-page, .movie-search, .logout {
+.my-page, .movie-search, .logout, .login {
   background-color: #fff;
   color: #333;
   padding: 5px 10px;

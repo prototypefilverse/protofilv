@@ -8,7 +8,7 @@
 | encrypted_password | string        | null: false |
 | user_name          | string        | null: false |
 | age                | integer       |             |
-| gender_id          | integer       | null: false |
+| gender             | integer,enum  | null: false |
 | reviewer_name      | string        | null: false |
 | filv_name          | string        | null: false |
 
