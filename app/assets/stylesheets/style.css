@@ -71,12 +71,7 @@ header h1 {
   justify-content: center;
   padding: 50px;
   }
-  .reviews-side {
-  background-color: #f9d69a;
-  width: calc(100vw - 600px);
-  padding: 50px;
-  }
-  
+
   .filv_status {
     display: flex;
     flex-direction: column;
@@ -113,19 +108,44 @@ font-weight: normal;
       color: #333;
       }
 
-  .reviews {
-  text-align: center;
-  }
-  
-  .reviews__title {
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
-  }
-  
-  .reviews__message {
-  margin-top: 20px;
-  font-size: 20px;
-  }
+      .reviews-side {
+        background-color: #f9d69a;
+        width: calc(100vw - 600px);
+        height: calc(100vh - 170px);
+        padding: 50px;
+        }
+      
+      
+        .reviews {
+          text-align: center;
+          height: 500px;
+          overflow: auto;
+        }
+        
+        .reviews__title {
+          margin: 0;
+          font-size: 36px;
+          font-weight: bold;
+        }
+        
+        .review {
+          text-align: left;
+          margin-top: 20px;
+        }
+        
+        .review__title {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        
+        .review__body {
+          font-size: 18px;
+          margin-top: 10px;
+        }
+        
+        .reviews__message {
+          margin-top: 20px;
+          font-size: 20px;
+        }
 
   
