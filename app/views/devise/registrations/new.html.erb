@@ -21,6 +21,31 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+    <div class="field">
+     <%= f.label :user_name %><br />
+     <%= f.text_field :user_name, class:"input-default", id:"user_name",  maxlength:"20" %>
+    </div>
+
+    <div class="field">
+     <%= f.label :age %><br />
+     <%= f.text_field :age, class:"input-default", id:"age",  maxlength:"20" %>
+    </div>
+
+    <div class="field">
+     <%= f.label :gender %><br />
+     <%= f.text_field :gender_id, class:"input-default", id:"gender",  maxlength:"20" %>
+    </div>
+
+    <div class="field">
+     <%= f.label :reviewer_name %><br />
+     <%= f.text_field :reviewer_name, class:"input-default", id:"reviewer_name",  maxlength:"20" %>
+    </div>
+
+      <div class="field">
+     <%= f.label :filv_name %><br />
+     <%= f.text_field :filv_name, class:"input-default", id:"filv_name",  maxlength:"20" %>
+    </div>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
