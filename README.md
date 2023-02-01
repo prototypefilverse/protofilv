@@ -6,9 +6,9 @@
 | ------------------ | ------------- | ----------- |
 | email              | string        | null: false |
 | encrypted_password | string        | null: false |
-| user_name          | string        |             |
+| user_name          | string        | null: false |
 | age                | integer       |             |
-| gender             | integer/enum  | null: false |
+| gender_id          | integer       | null: false |
 | reviewer_name      | string        | null: false |
 | filv_name          | string        | null: false |
 
