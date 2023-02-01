@@ -19,6 +19,13 @@
   
     <div class="top-button">
 
+      <% if user_signed_in? %>
+
+       <%# link_to 'ログイン', new_user_session_path, class: "login" %>
+      <%# link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+      <%# link_to current_user.nickname, "#", class: "user-nickname" %>
+      <%# link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+
      <div class="button">
       <a class="my-page" href="/">マイページ</a>
      </div>
@@ -28,8 +35,16 @@
      </div>
 
      <div class="button">
-      <a class="logout" href="/">ログアウト</a>
+      <a class="logout" href="/users/sign_out(.:format)">ログアウト</a>
      </div>
+
+      <% else %>
+      
+      <div class="button">
+      <%= link_to 'ログイン', new_user_session_path, class: "login" %>
+     </div>
+
+      <% end %>
 
     </div>
 
