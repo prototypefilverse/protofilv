@@ -13,10 +13,9 @@
 ActiveRecord::Schema.define(version: 2023_02_01_091814) do
 
   create_table "filvs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.text "avatar_image"
-    t.integer "strength"
-    t.integer "intelligence"
-    t.integer "charisma"
+    t.integer "strength", default: 1, null: false
+    t.integer "intelligence", default: 1, null: false
+    t.integer "charisma", default: 1, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
