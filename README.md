@@ -17,13 +17,28 @@
 - has_one :reviewer
 - has_one :filv
 
+## Filvs テーブル
+
+| Column       | Type       | Options                        |
+| ----------   | ---------- | -----------------------------  |
+| user_id      | references | null: false, foreign_key: true |
+| reviewer_id  | references | null: false, foreign_key: true |
+| strength     | integer    | null: false                    |
+| intelligence | integer    | null: false                    |
+| charisma     | integer    | null: false                    |
+
+### Association
+
+- belongs_to :user
+- belongs_to :reviewer
+- has_many :reviews
+
 
 ## Reviewers テーブル
 
-| Column        | Type       | Options                        |
-| ---------     | ---------  | -----------------------------  |   
-| user_id       | references | null: false, foreign_key: true |
-| filv_id       | references | null: false, foreign_key: true |
+| Column     | Type       | Options           |
+| ---------  | ---------  | ----------------  |   
+| user_id    | references | foreign_key: true |
 
 ### Association
 
@@ -64,18 +79,3 @@
 - belongs_to :filv
 
 
-## Filvs テーブル
-
-| Column       | Type       | Options                        |
-| ----------   | ---------- | -----------------------------  |
-| user_id      | references | null: false, foreign_key: true |
-| reviewer_id  | references | null: false, foreign_key: true |
-| strength     | integer    | null: false                    |
-| intelligence | integer    | null: false                    |
-| charisma     | integer    | null: false                    |
-
-### Association
-
-- belongs_to :user
-- has_one :reviewer
-- has_many :reviews
