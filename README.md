@@ -43,8 +43,8 @@
 ### Association
 
 - belongs_to :user
-- has_many :reviews
 - has_one :filv
+- has_many :reviews
 
 
 ## Movies テーブル
