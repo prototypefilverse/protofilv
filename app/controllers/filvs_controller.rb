@@ -4,8 +4,5 @@ class FilvsController < ApplicationController
     @filv = Filv.find_by(id: 1)
   end
 
-  def new
-    @filv = Filv.new
-  end
 
 end
