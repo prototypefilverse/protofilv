@@ -58,6 +58,44 @@ header h1 {
     font-family: Arial, sans-serif;
     font-size: 14px;
     }
+
+
+    .top-wrapper {
+      background-color: #f4f5f9;
+      height: calc(100vh - 170px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      }
+
+      .top_contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+    
+    .top_login {
+      font-size: 18px;
+      font-weight: bold;
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: none;
+      font-family: "Helvetica Neue", sans-serif;
+      }
+
+      .top_login:hover {
+        color: rgb(225, 119, 230);
+        }
+    
+     .yuusya-image {
+      margin-bottom: 30px;
+     }
+
+     .eiga-image {
+      margin-left: 25px;
+     }
   
   
   .wrapper {

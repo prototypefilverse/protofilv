@@ -70,8 +70,6 @@
 | ----------   | ---------- | -----------------------------  |
 | user_id      | references | null: false, foreign_key: true |
 | reviewer_id  | references | null: false, foreign_key: true |
-| review_id    | references | null: false, foreign_key: true |
-| avatar_image | text       | null: false                    |
 | strength     | integer    | null: false                    |
 | intelligence | integer    | null: false                    |
 | charisma     | integer    | null: false                    |

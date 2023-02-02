@@ -1,4 +1,6 @@
-<div class="wrapper">
+     <% if user_signed_in? %>
+    
+      <div class="wrapper">
   <div class="avatar-side">
     <%= render "avatar" %>
   </div>
@@ -6,3 +8,19 @@
     <%= render "reviews" %>
   </div>
 </div>
+
+      <% else %>
+
+<div class="top-wrapper">
+ 
+    <div class="top_contents">
+      <%= image_tag "yuusya.png", size:"120x100", class:"yuusya-image" %>
+      <%= link_to 'Please login', new_user_session_path, class:"top_login" %> 
+      <%= image_tag "eiga.png", size:"90x100", class:"eiga-image" %>
+    </div>
+  
+</div>
+      <% end %>
+
+
+
