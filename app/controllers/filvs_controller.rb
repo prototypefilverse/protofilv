@@ -1,7 +1,9 @@
 class FilvsController < ApplicationController
 
-  def index
-    @filv = Filv.find_by(id: 1)
-  end
+    def index
+     if user_signed_in?
+      @filv = current_user.filv
+     end
+    end
 
 end
