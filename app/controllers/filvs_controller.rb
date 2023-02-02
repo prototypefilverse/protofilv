@@ -1,7 +1,7 @@
 class FilvsController < ApplicationController
 
   def index
-    @filv = current_user.filv
+    @filv = Filv.find_by(id: 1)
   end
 
 
