@@ -1,6 +1,6 @@
 
   <div class="container">
-    <h3>投稿する</h3>
+    <h3>フィルブ投稿する</h3>
     <%= form_with(model: @filv, local: true) do |form| %>
       <%= form.text_field :strength, placeholder: "strength" %>
       <%= form.text_field :intelligence, placeholder: "intelligence" %>
@@ -10,7 +10,7 @@
 
 
   <div class="container">
-    <h3>投稿する</h3>
+    <h3>レビュー投稿する</h3>
     <%= form_with(model: @review, local: true) do |form| %>     
       <%= form.text_area :content, placeholder: "text", rows: "10" %>
       <%= form.submit "SEND" %>
