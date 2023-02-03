@@ -151,10 +151,6 @@ font-weight: normal;
 
 
 
-
-
-
-
       .reviews-side {
         background-color: #f9d69a;
         display: flex;
@@ -163,76 +159,98 @@ font-weight: normal;
         height: calc(100vh - 170px);
         padding: 10px;
         }
-
+        
         .reviews_header {
-          display: flex;
-          justify-content: space-around;
+        display: flex;
+        justify-content: space-between;
         height: 30px;
+        align-items: center;
         }
-      
-        .movie_title {
-          
-          color: rgb(83, 76, 57);
-          margin: 20px 0;
-          font-size: 24px;
-          font-weight: bold;
-          text-align: center;
+        
+        .reviews__title {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(83, 76, 57);
+        margin-right: auto;
         }
-    
+        
+        .movie-search {
+        background-color: #ffffff;
+        color: #1a1717;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        }
+        
+
+        .movie_info {
+          background-color: #ffffff;
+        }
+
+        .movie-title {
+        color: rgb(0, 0, 0);
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+        }
         
         .reviews {
-          background-color: #f7e7cb;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          height: 500px;
-          overflow: auto;
+        background-color: #f7e7cb;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 500px;
+        overflow: auto;
         }
         
         .review {
-          width: 500px;
-          height: 200px;
-          margin: 20px;
-          box-shadow: 2px 2px 10px rgb(178, 129, 45);
-          border-radius: 10px;
-          overflow: hidden;
-          background-color: #f2f2f2;
-          margin-bottom: 20px;
-          overflow: auto;
+        width: 500px;
+        height: 200px;
+        margin: 20px;
+        box-shadow: 2px 2px 10px rgb(178, 129, 45);
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+        overflow: auto;
+        }
+        
+        .movie_details {
+        display: flex;
+        justify-content:space-evenly;
+        color: #1a1717;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 20px 0;
+        }
+        
+        .movie_release-date {
+        padding-bottom: 5px;
+        }
+        
+        .movie_director {
+          padding-bottom: 5px;
+        }
+        
+        .review_title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px 0;
+        }
+        
+        .review_body {
+        padding: 20px;
+        font-size: 16px;
+        text-align: justify;
         }
 
-          .movie_details {
-            display: flex;
-            justify-content: space-around;
-            color: #1a1717;
-            font-weight: bold;
-            font-size: 14px;
-          }
-
-          .rmovie_release-date {
-            margin-left: 20px;
-          }
-
-          .movie_director {
-           margin-right: 20px;
-          }
         
 
-          .review_title {
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            }
-            
-        .review_body {
-          padding: 20px;
-          font-size: 14px;
-          text-align: center;
-          color: #333;
-       
-          }
-        
-        
+
         
         
         
