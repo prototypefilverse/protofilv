@@ -124,7 +124,13 @@ header h1 {
       display:flex;
       justify-content: center;
     margin-top: 30px;
+    margin-left: 15px;
     }
+
+    .filv_name {
+      font-weight: bold;
+      text-align: center;
+      }
   
   .status {
     margin-top: 30px;
@@ -246,8 +252,39 @@ font-weight: normal;
             padding: 10px;
             overflow: auto;
             }
+            
+            .review_review {
+              background-color: #FFF9C4;
+              border-top: 1px solid #FFC107;
+              text-align: center;
+              padding: 10px 0;
+              font-size: 14px;
+              font-weight: bold;
+              color: #333;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              }
 
-        
+
+              .review_evaluation {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                }
+                
+                .review_evaluation p {
+                margin: 0 10px;
+                }
+
+          
+          .star {
+              font-size: 20px;
+              color: #FFD700;
+
+          }
+    
 
 
         
