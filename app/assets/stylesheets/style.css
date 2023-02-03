@@ -164,18 +164,21 @@ font-weight: normal;
         padding: 10px;
         }
 
+        .reviews_header {
+          display: flex;
+          justify-content: space-around;
+        height: 30px;
+        }
       
-        .reviews__title {
+        .movie_title {
+          
           color: rgb(83, 76, 57);
           margin: 20px 0;
-          font-size: 36px;
+          font-size: 24px;
           font-weight: bold;
           text-align: center;
         }
-        
-
-
-        
+    
         
         .reviews {
           background-color: #f7e7cb;
@@ -198,13 +201,7 @@ font-weight: normal;
           overflow: auto;
         }
 
-        .review__title {
-          font-size: 20px;
-          font-weight: bold;
-          text-align: center;
-          }
-
-          .review__details {
+          .movie_details {
             display: flex;
             justify-content: space-around;
             color: #1a1717;
@@ -212,15 +209,22 @@ font-weight: normal;
             font-size: 14px;
           }
 
-          .review__release-date {
+          .rmovie_release-date {
             margin-left: 20px;
           }
 
-          .review__director {
+          .movie_director {
            margin-right: 20px;
           }
         
-        .review__body {
+
+          .review_title {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            }
+            
+        .review_body {
           padding: 20px;
           font-size: 14px;
           text-align: center;
