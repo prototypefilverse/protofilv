@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_03_120230) do
+ActiveRecord::Schema.define(version: 2023_02_04_050747) do
 
   create_table "filvs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 2023_02_03_120230) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["reviewer_id"], name: "index_filvs_on_reviewer_id"
     t.index ["user_id"], name: "index_filvs_on_user_id"
+  end
+
+  create_table "movies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "director", null: false
+    t.date "release_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "reviewers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
