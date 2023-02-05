@@ -1,4 +1,4 @@
-<%= form_with model: @review, url: movie_reviews_path(@movie), local: true do |form| %>
+<%= form_with model: @review, url: movie_reviews_path(@movie), local: true, method: :post do |form| %>
 <%= form.hidden_field :movie_id, value: @movie.id %>
 
   <div class="form-group">
