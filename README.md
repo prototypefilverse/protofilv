@@ -45,14 +45,17 @@
 
 ## Reviews テーブル
 
-| Column      | Type       | Options                        |
-| ----------  | ---------- | -----------------------------  |
-| reviewer_id | references | null: false, foreign_key: true |
-| movie_id    | references | null: false, foreign_key: true |
-| content     | text       | null: false                    |
-| e_rating    | integer    |                                |
-| l_rating    | integer    |                                |
-| c_rating    | integer    |                                |
+| Column         | Type       | Options                        |
+| ----------     | ---------- | -----------------------------  |
+| reviewer_id    | references | null: false, foreign_key: true |
+| movie_id       | references | null: false, foreign_key: true |
+| review_title   | string     | null: false                    |
+| review_content | text       | null: false                    |
+| e_rating       | integer    | null: false                    |
+| l_rating       | integer    | null: false                    |
+| c_rating       | integer    | null: false                    |
+
+content
 
 ### Association
 

@@ -1,9 +1,14 @@
 <%= form_with model: @review, url: movie_reviews_path(@movie), local: true, method: :post do |form| %>
 <%= form.hidden_field :movie_id, value: @movie.id %>
 
+    <div class="form-group">
+    <%= form.label :review_title %>
+    <%= form.text_field :review_title, class: "form-control" %>
+  </div>
+  
   <div class="form-group">
-    <%= form.label :content %>
-    <%= form.text_area :content, class: "form-control" %>
+    <%= form.label :review_content %>
+    <%= form.text_area :review_content, class: "form-control" %>
   </div>
   <div class="form-group">
     <%= form.label :e_rating %>
