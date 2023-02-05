@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     @review = @reviewer.reviews.new(review_params)
     @review.movie = @movie
     if @review.save
-      redirect_to  movie_reviews_path(@movie)
+      redirect_to  root_path
     else
       render :new
     end
