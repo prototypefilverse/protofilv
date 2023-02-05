@@ -16,17 +16,11 @@ class ReviewsController < ApplicationController
       render :new
     end
   end
-  
-
- 
-
-    
     
     private
     
     def review_params
       params.require(:review).permit(:content, :e_rating, :l_rating, :c_rating)
     end
-    
-    
+
 end
