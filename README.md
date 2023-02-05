@@ -16,22 +16,6 @@
 - has_one :reviewer
 - has_one :filv
 
-## Filvs テーブル
-
-| Column       | Type       | Options                        |
-| ----------   | ---------- | -----------------------------  |
-| user_id      | references | null: false, foreign_key: true |
-| reviewer_id  | references | null: false, foreign_key: true |
-| strength     | integer    | null: false                    |
-| intelligence | integer    | null: false                    |
-| charisma     | integer    | null: false                    |
-
-### Association
-
-- belongs_to :user
-- belongs_to :reviewer
-- has_many :reviews
-
 
 ## Reviewers テーブル
 
@@ -65,7 +49,6 @@
 | ----------  | ---------- | -----------------------------  |
 | reviewer_id | references | null: false, foreign_key: true |
 | movie_id    | references | null: false, foreign_key: true |
-| filv_id     | references | null: false, foreign_key: true |
 | content     | text       | null: false                    |
 | e_rating    | integer    |                                |
 | l_rating    | integer    |                                |
@@ -78,3 +61,18 @@
 - belongs_to :filv
 
 
+## Filvs テーブル
+
+| Column       | Type       | Options                        |
+| ----------   | ---------- | -----------------------------  |
+| user_id      | references | null: false, foreign_key: true |
+| reviewer_id  | references | null: false, foreign_key: true |
+| strength     | integer    | null: false                    |
+| intelligence | integer    | null: false                    |
+| charisma     | integer    | null: false                    |
+
+### Association
+
+- belongs_to :user
+- belongs_to :reviewer
+- has_many :reviews

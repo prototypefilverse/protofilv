@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_03_120230) do
+ActiveRecord::Schema.define(version: 2023_02_04_131201) do
 
   create_table "filvs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -24,11 +24,32 @@ ActiveRecord::Schema.define(version: 2023_02_03_120230) do
     t.index ["user_id"], name: "index_filvs_on_user_id"
   end
 
+  create_table "movies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title", null: false
+    t.string "director", null: false
+    t.date "release_at", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "reviewers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_reviewers_on_user_id"
+  end
+
+  create_table "reviews", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "reviewer_id", null: false
+    t.bigint "movie_id", null: false
+    t.text "content", null: false
+    t.float "e_rating", default: 0.0, null: false
+    t.float "l_rating", default: 0.0, null: false
+    t.float "c_rating", default: 0.0, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["movie_id"], name: "index_reviews_on_movie_id"
+    t.index ["reviewer_id"], name: "index_reviews_on_reviewer_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -50,4 +71,6 @@ ActiveRecord::Schema.define(version: 2023_02_03_120230) do
   add_foreign_key "filvs", "reviewers"
   add_foreign_key "filvs", "users"
   add_foreign_key "reviewers", "users"
+  add_foreign_key "reviews", "movies"
+  add_foreign_key "reviews", "reviewers"
 end
