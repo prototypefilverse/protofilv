@@ -4,23 +4,29 @@ class ReviewsController < ApplicationController
     @movie = Movie.find(params[:movie_id])
     @review = @movie.reviews.new
   end
-
+    
   def create
     @movie = Movie.find(params[:movie_id])
-    @review = @movie.reviews.new(review_params)
-    @review.reviewer = current_user
+    @reviewer = current_user.reviewer
+    @review = @reviewer.reviews.new(review_params)
+    @review.movie = @movie
     if @review.save
-      redirect_to movie_path(@movie), notice: "レビューが投稿されました"
+      redirect_to movie_path(@movie)
     else
       render :new
     end
-
   end
-
-  private
   
-  def review_params
-   params.require(:review).permit(:content)
-  end
 
+ 
+
+    
+    
+    private
+    
+    def review_params
+      params.require(:review).permit(:content, :e_rating, :l_rating, :c_rating)
+    end
+    
+    
 end
