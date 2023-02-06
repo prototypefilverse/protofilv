@@ -12,16 +12,18 @@
 
   <div class="movie_info"> 
 
-  <h2 class="movie-title"><%= @movie.title %></h2>
+   <h2 class="movie-title"><%= @movie.title %></h2>
+
     <div class="movie_details">
       <div class="movie_release-date">公開日: <%= @movie.release_at %></div>
       <div class="movie_director">監督: <%= @movie.director %></div>
      </div>
+     
+     <%= link_to 'レビュー投稿', new_movie_review_path(1),  class:"review-btn" %>
+
    </div>  
 
-   <%= link_to 'レビュー投稿', new_movie_review_path(1),  class:"top_login" %>
-
-</div>
+  </div>
 
 <div class="reviews">
 
