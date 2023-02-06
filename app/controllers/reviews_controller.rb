@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     @review = @reviewer.reviews.new(review_params)
     @review.movie = @movie
     if @review.save
-      redirect_to  root_path
+      redirect_to root_path
     else
       render :new
     end
@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
     private
     
     def review_params
-      params.require(:review).permit(:review_title, :review_content, :e_rating, :l_rating, :c_rating, :movie_id)
+      params.require(:review).permit(:review_title, :review_content, :e_rating, :l_rating, :c_rating)
     end
 
 end
