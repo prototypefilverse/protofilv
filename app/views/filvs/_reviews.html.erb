@@ -1,5 +1,7 @@
 <div class="reviews_container"> 
 
+<% if @movie.present? %>
+
   <div class="reviews_header"> 
 
     <h2 class="reviews__title">Review</h2>
@@ -48,4 +50,18 @@
 
  <% end %>
 
+ <% else %>
+
+  <div class="reviews_header"> 
+<h2 class="reviews__title">Review</h2>
+
+<div class="button">
+  <a class="movie-search" href="/">映画検索</a>
 </div>
+  </div>   
+<% end %>
+
+</div>
+
+
+
