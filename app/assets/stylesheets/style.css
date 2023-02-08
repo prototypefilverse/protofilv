@@ -377,3 +377,47 @@ footer {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   cursor: pointer;
 }
+
+.movie_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.movie_header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title_header {
+  width: 40%;
+  text-align: left;
+  font-weight: normal;
+}
+
+.director_header, .release_header {
+  width: 30%;
+  text-align: left;
+  font-weight: normal;
+}
+
+.movie_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.title {
+  width: 40%;
+  text-align: left;
+}
+
+.director, .release {
+  width: 30%;
+  text-align: left;
+  font-size: smaller;
+}

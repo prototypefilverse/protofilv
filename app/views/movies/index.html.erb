@@ -1,0 +1,23 @@
+<div class="movie_list">
+  <div class="movie_header">
+    <div class="title_header">Title</div>
+    <div class="director_header">Director</div>
+    <div class="release_header">Release Date</div>
+  </div>
+
+  <% @movies.each do |movie| %>
+    <div class="movie_row">
+      <div class="title" style="font-weight: bold;">
+       <%= link_to movie.title, "#" %>
+      </div>
+      <div class="director">
+        <%= movie.director %>
+      </div>
+      <div class="release">
+        <%= movie.release_at %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
