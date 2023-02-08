@@ -8,7 +8,7 @@ header {
 .header_bar {
   display: flex;
   align-items: center;
-  }
+}
 
 header h1 {
   margin: 0 0 0 60px;
@@ -25,15 +25,18 @@ header h1 {
   text-shadow: 2px 2px rgb(79, 66, 66);
   color: #fff;
   text-decoration: none;
-  }
+}
 
 .top-button {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
- }
+}
 
-.sign-up, .my-page, .logout, .login {
+.sign-up,
+.my-page,
+.logout,
+.login {
   background-color: #fff;
   color: #333;
   padding: 5px 10px;
@@ -45,64 +48,65 @@ header h1 {
   cursor: pointer;
   margin-left: 10px;
   text-decoration: none;
-  }
-  
-
-  
-  footer {
-    height: 70px;
-    background-color: rgb(161, 232, 210);
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    }
+}
 
 
-    .top-wrapper {
-      background-color: #f4f5f9;
-      height: calc(100vh - 170px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      }
 
-      .top_contents {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        }
-    
-    .top_login {
-      font-size: 18px;
-      font-weight: bold;
-      font-weight: bold;
-      margin-top: 20px;
-      text-decoration: none;
-      font-family: "Helvetica Neue", sans-serif;
-      }
+footer {
+  height: 70px;
+  background-color: rgb(161, 232, 210);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
 
-      .top_login:hover {
-        color: rgb(225, 119, 230);
-        }
-    
-     .yuusya-image {
-      margin-bottom: 25px;
-     }
 
-     .eiga-image {
-      margin-left: 25px;
-      margin-bottom: 5px;
-     }
-  
-  
-  .wrapper {
+.top-wrapper {
+  background-color: #f4f5f9;
+  height: calc(100vh - 170px);
   display: flex;
-  }
-  .avatar-side {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top_contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top_login {
+  font-size: 18px;
+  font-weight: bold;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.top_login:hover {
+  color: rgb(225, 119, 230);
+}
+
+.yuusya-image {
+  margin-bottom: 25px;
+}
+
+.eiga-image {
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+
+.wrapper {
+  display: flex;
+}
+
+.avatar-side {
   background-color: #dbdffc;
   width: 500px;
   height: calc(100vh - 170px);
@@ -111,233 +115,309 @@ header h1 {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  }
+}
 
-  .filv_status {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    }
-  
-    .yuusya_image {
-      display:flex;
-      justify-content: center;
-    margin-top: 30px;
-    margin-left: 15px;
-    }
+.filv_status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    .filv_name {
-      font-weight: bold;
-      text-align: center;
-      }
-  
-  .status {
-    margin-top: 30px;
-font-size: 20px;
-font-weight: normal;
-    text-align: center;
-    background-color: #e4e6f2;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #333;
-    }
-  
-    .status__title {
-      margin-bottom: 10px;
-      text-indent: 10px;
-      font-size: 18px;
-      font-style: italic;
-      }
-      
-      .status__value {
-      font-size: 30px;
-      color: #333;
-      }
+.yuusya_image {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 15px;
+}
 
+.filv_name {
+  font-weight: bold;
+  text-align: center;
+}
 
+.status {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  background-color: #e4e6f2;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #333;
+}
 
-      .reviews-side {
-        background-color: #f9d69a;
-        display: flex;
-        flex-direction: column;
-        width: calc(100vw - 500px);
-        height: calc(100vh - 170px);
-        padding: 10px;
-        }
+.status__title {
+  margin-bottom: 10px;
+  text-indent: 10px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.status__value {
+  font-size: 30px;
+  color: #333;
+}
 
 
-        
-        .reviews_header {
-        display: flex;
-        justify-content: space-between;
-        height: 55px;
-        align-items: center;
-        }
-        
-        .reviews__title {
-        font-family: Arial, sans-serif;
-        font-size: 36px;
-        font-weight: bold;
-        color: rgb(83, 76, 57);
-        margin-left: 10px;   
-        }
-        
-        
-        .movie-search {
-          font-size: 16px;
-          display: inline-block;
-          background-color: #FFFFFF;
-          color: #000000;
-          padding: 6px 20px;
-          margin-bottom: 8px;
-          text-decoration: none;
-          border: 1px solid #a9945b;
-          border-radius: 5px;
-          transition: all 0.2s ease-in-out;
-          box-shadow: 0 2px 3px #534C39;
-          }
-          
-          .movie-search:hover {
-          background-color: #534C39;
-          color: #FFFFFF;
-          cursor: pointer;
-          box-shadow: 0 2px 3px #534C39;
-          }
-          
-          .movie-search:active {
-          transform: translateY(2px);
-          box-shadow: inset 0 2px 3px #534C39;
-          }
-          .movie_info {
-            background-color: #f7e7cb;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 115px;
-            }
 
-        .movie-title {
-        color: rgb(0, 0, 0);
-        margin: 20px 0;
-        font-size: 26px;
-        line-height: 18px;
-        font-weight: bold;
-        text-align: center;
-        }
-
-        .movie_details {
-          display: flex;
-          justify-content: center;
-          margin-bottom: 5px;
-          font-size: 12px;
-          line-height: 0px;
-          color: rgb(0, 0, 0);
-          padding-bottom: 15px;
-        }
-        
-        .movie_release-date {
-          margin-right: 20px;
-          }
-        
-        .review-btn {
-          font-size: 14px;
-          display: inline-block;
-          background-color: #FFFFFF;
-          color: #000000;
-          padding: 6px 20px;
-          margin-bottom: 5px;
-          text-decoration: none;
-          border: 1px solid #a9945b;
-          border-radius: 5px;
-          transition: all 0.2s ease-in-out;
-          box-shadow: 0 2px 3px #534C39;
-          }
-          
-          .review-btn:hover {
-          background-color: #534C39;
-          color: #FFFFFF;
-          cursor: pointer;
-          }
-          
-          .review-btn:active {
-          transform: translateY(2px);
-          box-shadow: inset 0 2px 3px #534C39;
-          }
+.reviews-side {
+  background-color: #f9d69a;
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 500px);
+  height: calc(100vh - 170px);
+  padding: 10px;
+}
 
 
-        .reviews {
-        background-color: #f7e7cb;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 500px;
-        overflow: auto;
-        }
-        
-        .review {
-        width: 650px;
-        height: 250px;
-        margin: 20px;
-        box-shadow: 2px 2px 10px rgb(178, 129, 45);
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #f2f2f2;
-        margin-bottom: 20px;
-        overflow: auto;
-        }
-             
 
-        .review_title {
-          font-size: 20px;
-          font-weight: bold;
-          color: rgb(83, 76, 57);
-          margin: 10px;
-          }
-        
-          .review_body {
-            font-size: 16px;
-            padding: 10px;
-            overflow: auto;
-            }
-            
-            .review_review {
-              background-color: #FFF9C4;
-              border-top: 1px solid #FFC107;
-              text-align: center;
-              padding: 10px 0;
-              font-size: 14px;
-              font-weight: bold;
-              color: #333;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              }
+.reviews_header {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+}
+
+.reviews__title {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(83, 76, 57);
+  margin-left: 10px;
+}
 
 
-              .review_evaluation {
-                margin-top: 10px;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                }
-                
-                .review_evaluation p {
-                margin: 0 10px;
-                }
+.movie-search {
+  font-size: 16px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 6px 20px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  border: 1px solid #a9945b;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 3px #534C39;
+}
 
-          
-          .star {
-              font-size: 20px;
-              color: #FFD700;
+.movie-search:hover {
+  background-color: #534C39;
+  color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 2px 3px #534C39;
+}
 
-          }
-    
+.movie-search:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 3px #534C39;
+}
+
+.movie_info {
+  background-color: #f7e7cb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 115px;
+}
+
+.movie-title {
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  font-size: 26px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.movie_details {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 0px;
+  color: rgb(0, 0, 0);
+  padding-bottom: 15px;
+}
+
+.movie_release-date {
+  margin-right: 20px;
+}
+
+.review-btn {
+  font-size: 14px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 6px 20px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  border: 1px solid #a9945b;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 3px #534C39;
+}
+
+.review-btn:hover {
+  background-color: #534C39;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.review-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 3px #534C39;
+}
 
 
-        
-        
-        
-        
-        
-        
+.reviews {
+  background-color: #f7e7cb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 500px;
+  overflow: auto;
+}
+
+.review {
+  width: 650px;
+  height: 250px;
+  margin: 20px;
+  box-shadow: 2px 2px 10px rgb(178, 129, 45);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+
+.review_title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(83, 76, 57);
+  margin: 10px;
+}
+
+.review_body {
+  font-size: 16px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.review_review {
+  background-color: #FFF9C4;
+  border-top: 1px solid #FFC107;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.review_evaluation {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.review_evaluation p {
+  margin: 0 10px;
+}
+
+
+.star {
+  font-size: 20px;
+  color: #FFD700;
+
+}
+
+
+.review-form {
+  max-width: 720px;
+  margin: 50px auto;
+}
+
+.form-group {
+  margin-bottom: 40px;
+}
+
+.form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.movie_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.movie_header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title_header {
+  width: 40%;
+  text-align: left;
+  font-weight: normal;
+}
+
+.director_header, .release_header {
+  width: 30%;
+  text-align: left;
+  font-weight: normal;
+}
+
+.movie_row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.title {
+  width: 40%;
+  text-align: left;
+}
+
+.director, .release {
+  width: 30%;
+  text-align: left;
+  font-size: smaller;
+}

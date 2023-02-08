@@ -1,12 +1,14 @@
 <div class="reviews_container"> 
 
+<% if @movie.present? %>
+
   <div class="reviews_header"> 
 
     <h2 class="reviews__title">Review</h2>
 
-    <div class="button">
-      <a class="movie-search" href="/">映画検索</a>
-    </div>
+ <div class="button">
+  <%= link_to "映画検索", movies_path, class: "movie-search" %>
+</div>
 
   </div>   
 
@@ -19,7 +21,7 @@
       <div class="movie_director">監督: <%= @movie.director %></div>
      </div>
      
-     <%= link_to 'レビュー投稿', new_movie_review_path(1),  class:"review-btn" %>
+     <%= link_to 'レビュー投稿', new_movie_review_path(@movie),  class:"review-btn" %>
 
    </div>  
 
@@ -48,4 +50,19 @@
 
  <% end %>
 
+ <% else %>
+
+<div class="reviews_header">
+  <h2 class="reviews__title">Review</h2>
+  <p class="reviews__empty-text">レビューしたい映画を検索してください</p>
+  <div class="button">
+    <%= link_to "映画検索", movies_path, class: "movie-search" %>
+  </div>
 </div>
+
+<% end %>
+
+</div>
+
+
+

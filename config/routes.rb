@@ -5,7 +5,10 @@ Rails.application.routes.draw do
 
   resources :movies do
     resources :reviews, only: [:new, :create]
-    
   end
 
+  resources :movies, only: [:index] do
+    resources :filvs, only: [:index, :new, :create]
+  end
+  
 end

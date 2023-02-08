@@ -1,26 +1,17 @@
-<%= form_with model: @review, url: movie_reviews_path(@movie), local: true, method: :post do |form| %>
-<%= form.hidden_field :movie_id, value: @movie.id %>
-
-    <div class="form-group">
-    <%= form.label :review_title %>
-    <%= form.text_field :review_title, class: "form-control" %>
+  <div class="review-form container">
+    <h2 class="text-center my-4"> <%= @movie.title %>のレビュー投稿 </h2>
+    <%= form_with model: @review, url: movie_reviews_path(@movie), local: true, method: :post, html: { class: "form" } do |form| %>
+      <%= form.hidden_field :movie_id, value: @movie.id %>
+      <div class="form-group">
+        <%= form.label :レビュータイトル, class: "form-label" %>
+        <%= form.text_field :review_title, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= form.label :レビュー内容, class: "form-label" %>
+        <%= form.text_area :review_content, class: "form-control", rows: 5 %>
+      </div>
+      <div class="text-center">
+        <%= form.submit "投稿", class: "btn btn-primary" %>
+      </div>
+    <% end %>
   </div>
-  
-  <div class="form-group">
-    <%= form.label :review_content %>
-    <%= form.text_area :review_content, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :e_rating %>
-    <%= form.text_field :e_rating, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :l_rating %>
-    <%= form.text_field :l_rating, class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= form.label :c_rating %>
-    <%= form.text_field :c_rating, class: "form-control" %>
-  </div>
-  <%= form.submit "投稿", class: "btn btn-primary" %>
-<% end %>
