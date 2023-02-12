@@ -426,3 +426,7 @@ footer {
   color: red;
   margin: 20px;
 }
+
+.user_reviewed {
+  color: rgb(241, 154, 83);
+}

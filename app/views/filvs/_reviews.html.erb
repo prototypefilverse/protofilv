@@ -21,7 +21,11 @@
       <div class="movie_director">監督: <%= @movie.director %></div>
      </div>
      
-     <%= link_to 'レビュー投稿', new_movie_review_path(@movie),  class:"review-btn" %>
+      <% if user_signed_in? && !current_user.reviewer.reviews.where(movie: @movie).exists? %>
+       <%= link_to 'レビュー投稿', new_movie_review_path(@movie),  class:"review-btn" %>
+       <% else %>
+        <h4 class="user_reviewed"> あなたはこの映画のレビューを投稿済みです。 </h4> 
+      <% end %>
 
    </div>  
 
