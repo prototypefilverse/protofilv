@@ -1,3 +1,19 @@
+# アプリケーション名
+Filverse(prototype)
+
+# アプリケーション概要
+
+
+# テーブル設計
+# テーブル設計
+
+# テーブル設計
+# テーブル設計
+# テーブル設計
+
+
+
+
 # テーブル設計
 
 ## users テーブル
@@ -26,8 +42,8 @@
 ### Association
 
 - belongs_to :user
-- has_one :filv
-- has_many :reviews
+- has_one    :filv
+- has_many   :reviews
 
 
 ## Movies テーブル
@@ -35,7 +51,7 @@
 | Column      | Type       | Options     |
 | --------    | ---------- | ----------- |
 | title       | text       | null: false |
-| released_at | datetime   | null: false |
+| release_at  | datetime   | null: false |
 | director    | string     |             |
 
 ### Association
@@ -55,13 +71,10 @@
 | l_rating       | integer    | null: false                    |
 | c_rating       | integer    | null: false                    |
 
-content
-
 ### Association
 
 - belongs_to :movie
 - belongs_to :reviewer
-- belongs_to :filv
 
 
 ## Filvs テーブル
@@ -78,4 +91,3 @@ content
 
 - belongs_to :user
 - belongs_to :reviewer
-- has_many :reviews
