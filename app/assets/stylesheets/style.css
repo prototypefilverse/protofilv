@@ -429,4 +429,5 @@ footer {
 
 .user_reviewed {
   color: rgb(241, 154, 83);
+  font-weight: bold;
 }
