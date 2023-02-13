@@ -9,8 +9,8 @@ https://protofilv.onrender.com
 
 # テスト用アカウント
 Basic認証 ID：mrkw  
-Basic認証 PASS：0903
-メールアドレス：sample@gmail.com
+Basic認証 PASS：0903  
+メールアドレス：sample@gmail.com  
 パスワード：123abc  
 
 # 利用方法 
@@ -47,12 +47,12 @@ Basic認証 PASS：0903
 - Rails 6.0.6.1
 
 # ローカルでの動作方法
-% git clone https://github.com/prototypefilverse/protofilv.git
-% cd protofilv
-% bundle install
-% rails db:create
-% rails db:migrate
-% yarn install
+% git clone https://github.com/prototypefilverse/protofilv.git  
+% cd protofilv  
+% bundle install  
+% rails db:create  
+% rails db:migrate  
+% yarn install  
 
 
 
