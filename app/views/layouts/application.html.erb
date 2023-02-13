@@ -25,7 +25,7 @@
       <%# link_to current_user.nickname, "#", class: "user-nickname" %>
 
      <div class="button">
-      <a class="my-page" href="/">マイページ</a>
+      <%= link_to 'マイページ', reviewers_path, method: :get, class: "my-page" %>
      </div>
 
      <div class="button">
