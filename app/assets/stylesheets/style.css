@@ -431,3 +431,41 @@ footer {
   color: rgb(241, 154, 83);
   font-weight: bold;
 }
+
+
+.my-reviews {
+  background-color: #f7e7cb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 500px;
+  overflow: auto;
+}
+
+.my-movie-title {
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  font-size: 26px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.my-review_title {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(83, 76, 57);
+  margin: 10px;
+}
+
+.my-review-created {
+  font-size: 16px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.my-review_body {
+  font-size: 16px;
+  padding: 10px;
+  overflow: auto;
+}

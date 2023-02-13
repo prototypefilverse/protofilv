@@ -4,15 +4,31 @@ Filverse(prototype)
 # アプリケーション概要
 
 
-# テーブル設計
-# テーブル設計
 
-# テーブル設計
-# テーブル設計
-# テーブル設計
+# URL
+https://protofilv.onrender.com
 
 
+# テスト用アカウント
 
+# 利用方法
+## 映画レビュー
+映画のレビューを投稿できます。
+## レビューへの評価がアバターに反映
+
+
+# 制作した背景
+
+# 洗い出した要件
+[要件を定義したシート](https://docs.google.com/spreadsheets/d/1EmU3Xp_ODezRBASj9ChyZa917aQ1k6SZd6EMIfQqMkE)
+
+# 実装した機能についての画像、およびその説明
+
+# 実装予定の機能
+
+# ER図
+
+# 画面偏移図
 
 # テーブル設計
 
@@ -91,3 +107,11 @@ Filverse(prototype)
 
 - belongs_to :user
 - belongs_to :reviewer
+
+# 開発環境
+## 使用しているバージョン等
+
+# ローカルでの動作方法
+
+
+# 工夫したポイント

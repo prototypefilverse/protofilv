@@ -1,0 +1,20 @@
+ <div class="my-reviews">
+
+   <% @reviews.each do |review| %>
+
+    <div class="review">
+    
+     <h2 class="my-movie-title"><%= review.movie.title %></h2>
+     <h4 class="my-review_title"><%= review.review_title %></h3>
+      <p class=my-review-created><%= review.created_at %></p>
+
+     
+     <div class="my-review_body"><%= review.review_content %></div>
+
+
+    </div> 
+
+   <% end %>
+
+ </div>
+
