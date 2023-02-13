@@ -436,36 +436,63 @@ footer {
 .my-reviews {
   background-color: #f7e7cb;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   height: 500px;
   overflow: auto;
-}
-
-.my-movie-title {
+  align-items: center;
+  }
+  
+  .review {
+  background-color: #fff;
+  width: 700px;
+  padding: 0 20px 20px 20px;
+  box-shadow: 2px 2px 2px #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  }
+  
+  .my-movie-title {
   color: rgb(0, 0, 0);
-  margin: 20px 0;
-  font-size: 26px;
-  line-height: 18px;
+  background-color: rgb(241, 224, 204);
+  font-size: 24x;
+  line-height: 36px;
   font-weight: bold;
   text-align: center;
-}
-
-.my-review_title {
+  border-radius: 10px;
+  }
+  
+  .my-review_title {
   font-size: 20px;
   font-weight: bold;
   color: rgb(83, 76, 57);
   margin: 10px;
-}
-
-.my-review-created {
+  line-height: 10px;
+  text-align: center;
+  }
+  
+  .my-review-created {
+  font-size: 12px;
+  overflow: auto;
+  color: rgb(80, 79, 79);
+  text-align: center;
+  }
+  
+  .my-review_body {
   font-size: 16px;
   padding: 10px;
   overflow: auto;
-}
-
-.my-review_body {
-  font-size: 16px;
-  padding: 10px;
-  overflow: auto;
-}
+  }
+  
+  .my-review-delete {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: right;
+  text-decoration: none;
+  }
+  
+  .my-review-delete:hover {
+  background-color: #ff3333;
+  }
