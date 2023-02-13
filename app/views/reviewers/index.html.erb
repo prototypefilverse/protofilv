@@ -7,7 +7,7 @@
      <h2 class="my-movie-title"><%= review.movie.title %></h2>
      <h4 class="my-review_title"><%= review.review_title %></h3>
       <p class=my-review-created><%= review.created_at %></p>
-
+     <%= link_to '削除', reviewer_path(review.id), method: :delete, class: "my-review-delete" %>
      
      <div class="my-review_body"><%= review.review_content %></div>
 
