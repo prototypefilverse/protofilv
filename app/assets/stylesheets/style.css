@@ -50,7 +50,7 @@ header h1 {
   text-decoration: none;
 }
 
-
+/********************************/
 
 footer {
   height: 70px;
@@ -62,6 +62,7 @@ footer {
   font-size: 14px;
 }
 
+/********************************/
 
 .top-wrapper {
   background-color: #f4f5f9;
@@ -101,6 +102,7 @@ footer {
   margin-bottom: 5px;
 }
 
+/********************************/
 
 .wrapper {
   display: flex;
@@ -159,7 +161,7 @@ footer {
   color: #333;
 }
 
-
+/********************************/
 
 .reviews-side {
   background-color: #f9d69a;
@@ -169,8 +171,6 @@ footer {
   height: calc(100vh - 170px);
   padding: 10px;
 }
-
-
 
 .reviews_header {
   display: flex;
@@ -338,6 +338,11 @@ footer {
 
 }
 
+.star:hover {
+  cursor: pointer;
+  }
+
+/********************************/
 
 .review-form {
   max-width: 720px;
