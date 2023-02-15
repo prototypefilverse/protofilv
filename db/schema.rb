@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_04_131201) do
+ActiveRecord::Schema.define(version: 2023_02_15_080811) do
 
   create_table "filvs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -32,6 +32,16 @@ ActiveRecord::Schema.define(version: 2023_02_04_131201) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "review_id", null: false
+    t.float "e_rating", null: false
+    t.float "l_rating", null: false
+    t.float "c_rating", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["review_id"], name: "index_ratings_on_review_id"
+  end
+
   create_table "reviewers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -44,9 +54,6 @@ ActiveRecord::Schema.define(version: 2023_02_04_131201) do
     t.bigint "movie_id", null: false
     t.string "review_title", null: false
     t.text "review_content", null: false
-    t.float "e_rating", default: 0.0, null: false
-    t.float "l_rating", default: 0.0, null: false
-    t.float "c_rating", default: 0.0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["movie_id"], name: "index_reviews_on_movie_id"
@@ -71,6 +78,7 @@ ActiveRecord::Schema.define(version: 2023_02_04_131201) do
 
   add_foreign_key "filvs", "reviewers"
   add_foreign_key "filvs", "users"
+  add_foreign_key "ratings", "reviews"
   add_foreign_key "reviewers", "users"
   add_foreign_key "reviews", "movies"
   add_foreign_key "reviews", "reviewers"
