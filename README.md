@@ -83,8 +83,6 @@ Basic認証 PASS：0903
 | reviewer_name      | string        | null: false |
 | filv_name          | string        | null: false |
 
-### Association
-
 - has_one :reviewer
 - has_one :filv
 
@@ -95,42 +93,9 @@ Basic認証 PASS：0903
 | ---------  | ---------  | ----------------  |   
 | user_id    | references | foreign_key: true |
 
-### Association
-
 - belongs_to :user
 - has_one    :filv
 - has_many   :reviews
-
-
-## Movies テーブル
-
-| Column      | Type       | Options     |
-| --------    | ---------- | ----------- |
-| title       | text       | null: false |
-| release_at  | datetime   | null: false |
-| director    | string     |             |
-
-### Association
-
-- has_many :reviews
-
-
-## Reviews テーブル
-
-| Column         | Type       | Options                        |
-| ----------     | ---------- | -----------------------------  |
-| reviewer_id    | references | null: false, foreign_key: true |
-| movie_id       | references | null: false, foreign_key: true |
-| review_title   | string     | null: false                    |
-| review_content | text       | null: false                    |
-| e_rating       | integer    | null: false                    |
-| l_rating       | integer    | null: false                    |
-| c_rating       | integer    | null: false                    |
-
-### Association
-
-- belongs_to :movie
-- belongs_to :reviewer
 
 
 ## Filvs テーブル
@@ -143,9 +108,41 @@ Basic認証 PASS：0903
 | intelligence | integer    | null: false                    |
 | charisma     | integer    | null: false                    |
 
-### Association
-
 - belongs_to :user
 - belongs_to :reviewer
 
 
+## Movies テーブル
+
+| Column      | Type       | Options     |
+| --------    | ---------- | ----------- |
+| title       | text       | null: false |
+| release_at  | datetime   | null: false |
+| director    | string     |             |
+
+- has_many :reviews
+
+
+## Reviews テーブル
+
+| Column         | Type       | Options                        |
+| ----------     | ---------- | -----------------------------  |
+| reviewer_id    | references | null: false, foreign_key: true |
+| movie_id       | references | null: false, foreign_key: true |
+| review_title   | string     | null: false                    |
+| review_content | text       | null: false                    |
+
+- belongs_to :movie
+- belongs_to :reviewer
+- has_many :ratings
+
+## Ratings テーブル
+
+| Column      | Type       | Options                        |
+| ----------  | ---------- | -----------------------------  |
+| reviewer_id | references | null: false, foreign_key: true |
+| e_rating    | integer    | null: false                    |
+| l_rating    | integer    | null: false                    |
+| c_rating    | integer    | null: false                    |
+
+- belongs_to :review
