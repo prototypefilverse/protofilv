@@ -6,6 +6,9 @@ class User < ApplicationRecord
 
   has_one :reviewer
   has_one :filv
+
+  has_many :user_ratings
+  has_many :ratings, through: :user_ratings
        
   after_create :create_reviewer
   after_create :create_filv
