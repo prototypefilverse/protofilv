@@ -113,6 +113,8 @@ Basic認証 PASS：0903
 
 - has_one :reviewer
 - has_one :filv
+- has_many :user_ratings
+- has_many :ratings, through: :user_ratings
 
 
 ## Reviewers テーブル
@@ -168,10 +170,21 @@ Basic認証 PASS：0903
 
 | Column      | Type       | Options                        |
 | ----------  | ---------- | -----------------------------  |
-| user_id     | references | null: false, foreign_key: true |
 | reviewer_id | references | null: false, foreign_key: true |
 | e_rating    | integer    | null: false                    |
 | l_rating    | integer    | null: false                    |
 | c_rating    | integer    | null: false                    |
 
 - belongs_to :review
+- has_many :user_ratings
+- has_many :users, through: :user_ratings
+
+## UserRatings テーブル
+
+| Column      | Type       | Options                        |
+| ----------  | ---------- | -----------------------------  |
+| user_id     | references | null: false, foreign_key: true |
+| rating_id   | references | null: false, foreign_key: true |
+
+ - belongs_to :user
+ - belongs_to :rating
