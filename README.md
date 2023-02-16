@@ -168,6 +168,7 @@ Basic認証 PASS：0903
 
 | Column      | Type       | Options                        |
 | ----------  | ---------- | -----------------------------  |
+| user_id     | references | null: false, foreign_key: true |
 | reviewer_id | references | null: false, foreign_key: true |
 | e_rating    | integer    | null: false                    |
 | l_rating    | integer    | null: false                    |

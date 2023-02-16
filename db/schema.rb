@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2023_02_15_080811) do
   end
 
   create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
     t.bigint "review_id", null: false
     t.float "e_rating", null: false
     t.float "l_rating", null: false
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2023_02_15_080811) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["review_id"], name: "index_ratings_on_review_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "reviewers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -79,6 +81,7 @@ ActiveRecord::Schema.define(version: 2023_02_15_080811) do
   add_foreign_key "filvs", "reviewers"
   add_foreign_key "filvs", "users"
   add_foreign_key "ratings", "reviews"
+  add_foreign_key "ratings", "users"
   add_foreign_key "reviewers", "users"
   add_foreign_key "reviews", "movies"
   add_foreign_key "reviews", "reviewers"
