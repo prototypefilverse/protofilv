@@ -39,24 +39,28 @@
     <h3 class="review_title"><%= review.review_title %></h3>
     <div class="review_body"><%= review.review_content %></div>
     <div class="review_review">
+     <% unless review.reviewer.user == current_user %> 
      このレビューを評価してください
      <div class="review_evaluation">
-     <%= form_with model: Rating.new(review_id: review.id), url: movie_review_ratings_path(review.movie, review), method: :post do |f| %>
-     <div class="field">
-      <%= f.label :感動的 %>
-      <%= f.select :e_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
+        <%= form_with model: Rating.new(review_id: review.id), url: movie_review_ratings_path(review.movie, review), method: :post do |f| %>
+        <div class=" rating_field">
+        <%= f.label :感動的 %>
+        <%= f.select :e_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
+        </div>
+        <div class="rating_field">
+        <%= f.label :論理的%>
+        <%= f.select :l_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
+        </div>
+        <div class="rating_field">
+        <%= f.label :魅力的 %>
+        <%= f.select :c_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
+        </div>
+        <%= f.submit "評価する" %>
+        <% end %>
      </div>
-     <div class="field">
-      <%= f.label :論理的%>
-      <%= f.select :l_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
-     </div>
-     <div class="field">
-      <%= f.label :魅力的 %>
-      <%= f.select :c_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
-     </div>
-     <%= f.submit "評価する" %>
+    <% else %> 
+     あなたはこのレビューの投稿者です
      <% end %>
-    </div>
    </div> 
 
   </div>

@@ -6,6 +6,10 @@ class ReviewersController < ApplicationController
 
   def destroy
     review = Review.find(params[:id])
+    review.ratings.each do |rating|
+      rating.user_ratings.destroy_all
+    end
+    review.ratings.destroy_all
     review.destroy
     redirect_to reviewers_path
   end   
