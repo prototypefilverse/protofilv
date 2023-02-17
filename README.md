@@ -3,7 +3,7 @@ FilVerse(フィルバース) 試作
 
 # アプリケーション概要
 映画をレビューすると勇者が強くなるアプリ  
-
+<img src="https://i.gyazo.com/5906791153e765c1c2e31a615ed12db4.jpg" width="70%">  
 ①映画レビュー  
 ・映画のレビューを投稿できる。  
 ・他のユーザーに自分のレビューが評価され、自分は他のユーザーのレビューを評価できる。  
@@ -71,16 +71,19 @@ Basic認証 PASS：0903
 ・映画選択  
 ・レビュー一覧  
 ・投稿画面へ偏移  
-<img src="https://i.gyazo.com/a2abe63861b757d0323cf7fde505c4e2.gif" width="50%">  
+<img src="https://i.gyazo.com/54a48844c90f92f926ab07cb165d8abb.gif" width="50%">  
 
 ・投稿したら投稿画面ボタンは消える  
 ・マイページに自分のレビュー一覧  
 ・レビュー削除  
-<img src="https://i.gyazo.com/9ff1d380f43a7b55d037c6feda9bf185.gif" width="50%">
+<img src="https://i.gyazo.com/143f5c707e4d0fc129081f075d4762eb.gif" width="50%">  
+
+・他のレビュアーのレビューに３つの項目を1〜5点を選択して評価投稿する  
+<img src="https://i.gyazo.com/8bcb539e1dbf9d2ff7523d3fc2904eec.gif" width="50%">
+
 # 実装予定の機能
 ・映画検索機能  
 ・削除の際の警告機能  
-・映画レビューを評価する機能  
 ・評価によりアバターのパラメータが上がる機能  
 ・アバターが活躍するフィールドの実装
 
