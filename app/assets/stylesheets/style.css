@@ -308,7 +308,8 @@ footer {
 
 .review_review {
   background-color: #FFF9C4;
-  border-top: 1px solid #FFC107;
+  border: 1px solid #FFC107;
+  border-radius: 15px;
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
@@ -327,20 +328,15 @@ footer {
   text-align: center;
 }
 
+.field {
+  display: inline-block;
+  margin: 0 10px;
+  }
+
 .review_evaluation p {
   margin: 0 10px;
 }
 
-
-.star {
-  font-size: 20px;
-  color: #FFD700;
-
-}
-
-.star:hover {
-  cursor: pointer;
-  }
 
 /********************************/
 
