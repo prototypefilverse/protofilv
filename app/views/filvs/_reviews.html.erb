@@ -41,7 +41,7 @@
     <div class="review_review">
      このレビューを評価してください
      <div class="review_evaluation">
-     <%= form_with model: review.ratings.build, url: movie_review_ratings_path(review.movie, review), method: :post do |f| %>
+     <%= form_with model: Rating.new(review_id: review.id), url: movie_review_ratings_path(review.movie, review), method: :post do |f| %>
      <div class="field">
       <%= f.label :感動的 %>
       <%= f.select :e_rating, options_for_select((1..5).map { |i| [i, i] }), { include_blank: true } %>
