@@ -2,8 +2,14 @@ class RatingsController < ApplicationController
 
   def create
     @review = Review.find(params[:review_id])
-    @rating = @review.ratings.create(rating_params)
-    redirect_to movie_path(@review.movie)
+    @rating = Rating.find_or_initialize_by(review_id: @review.id)
+    @rating.assign_attributes(rating_params)
+    if @rating.save
+      current_user.ratings << @rating
+      redirect_to movie_path(@review.movie)
+    else
+      render :new
+    end
   end
 
   private
@@ -13,3 +19,4 @@ class RatingsController < ApplicationController
    end
    
 end
+
