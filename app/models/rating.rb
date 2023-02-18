@@ -31,14 +31,20 @@ class Rating < ApplicationRecord
 
   def update_filv_on_update
     filv = self.review.reviewer.user.filv
-    prev_e_rating, prev_l_rating, prev_c_rating = self.saved_changes["e_rating"], self.saved_changes["l_rating"], self.saved_changes["c_rating"]
-    if prev_e_rating.present? && prev_l_rating.present? && prev_c_rating.present?
-      filv.update(
-        strength: filv.strength + self.e_rating - prev_e_rating[0],
-        intelligence: filv.intelligence + self.l_rating - prev_l_rating[0],
-        charisma: filv.charisma + self.c_rating - prev_c_rating[0]
-      )
-    end  
+  
+    # 評価の変更前の値をフィルムから引く
+    filv.update(
+      strength: filv.strength - self.e_rating_before_last_save.to_i,
+      intelligence: filv.intelligence - self.l_rating_before_last_save.to_i,
+      charisma: filv.charisma - self.c_rating_before_last_save.to_i
+    )
+  
+    # 評価の変更後の値をフィルムに加える
+    filv.update(
+      strength: filv.strength + self.e_rating.to_i,
+      intelligence: filv.intelligence + self.l_rating.to_i,
+      charisma: filv.charisma + self.c_rating.to_i
+    )
   end
 
 end
