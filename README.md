@@ -80,7 +80,7 @@ Basic認証 PASS：0903
 
 ・他のレビュアーのレビューに３つの項目を1〜5点を選択して評価投稿する  
 ・評価されたレビューを投稿したユーザーのアバターのパラメータが上がる  
-<img src="https://i.gyazo.com/8bcb539e1dbf9d2ff7523d3fc2904eec.gif" width="50%">
+<img src="https://i.gyazo.com/2daa3e3bcc896eb5ffd8945571ba4987.gif" width="50%">
 
 # 実装予定の機能
 ・映画検索機能  
