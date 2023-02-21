@@ -320,22 +320,31 @@ footer {
   align-items: center;
 }
 
-
 .review_evaluation {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   text-align: center;
-}
-
-.rating_field {
+  }
+  
+  .rating_field {
   display: inline-block;
   margin: 0 10px;
   }
-
-.review_evaluation p {
-  margin: 0 10px;
-}
+  
+  .stars {
+  font-size: 15px;
+  color: #d3d3d3;
+  display: inline-block;
+  }
+  
+  .star {
+  cursor: pointer;
+  }
+  
+  .star.filled {
+  color: #fdd835;
+  }
 
 
 /********************************/
