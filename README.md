@@ -94,7 +94,8 @@ Basic認証 PASS：0903
 
 # 開発環境
 - ruby 2.6.5
-- Rails 6.0.6.1
+- Ruby on Rails 6.0.6.1
+- mysql  5.7.41
 
 # ローカルでの動作方法
 % git clone https://github.com/prototypefilverse/protofilv.git  
