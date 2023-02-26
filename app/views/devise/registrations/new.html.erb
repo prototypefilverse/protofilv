@@ -22,13 +22,13 @@
   </div>
 
     <div class="field">
-     <%= f.label :age %><br />
+     <%= f.label :年齢 %><br />
      <%= f.text_field :age, class:"input-default", id:"age",  maxlength:"20" %>
     </div>
 
     <div class="field">
-     <%= f.label :gender %><br />
-     <%= f.text_field :gender, class:"input-default", id:"gender",  maxlength:"20" %>
+     <%= f.label :性別 %><br />
+     <%= f.select :gender, [['未選択', 0], ['女', 1], ['男', 2], ['その他', 3]], class: "input-default", id: "gender" %>
     </div>
 
     <div class="field">
