@@ -1,49 +1,49 @@
-<h2>Sign up</h2>
+<h2 class="sign-up-title">新規登録</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
+  <div class="r-field">
+    <%= f.label :Eメール %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
+  <div class="r-field">
+    <%= f.label :パスワード %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
+  <div class="r-field">
+    <%= f.label :パスワード（確認） %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-    <div class="field">
+    <div class="r-field">
      <%= f.label :年齢 %><br />
      <%= f.text_field :age, class:"input-default", id:"age",  maxlength:"20" %>
     </div>
 
-    <div class="field">
+    <div class="r-field">
      <%= f.label :性別 %><br />
      <%= f.select :gender, [['未選択', 0], ['女', 1], ['男', 2], ['その他', 3]], class: "input-default", id: "gender" %>
     </div>
 
-    <div class="field">
-     <%= f.label :reviewer_name %><br />
+    <div class="r-field">
+     <%= f.label :レビュアーとしての名前（任意） %><br />
      <%= f.text_field :reviewer_name, class:"input-default", id:"reviewer_name",  maxlength:"20" %>
     </div>
 
-      <div class="field">
-     <%= f.label :filv_name %><br />
+      <div class="r-field">
+     <%= f.label :アバターの名前 %><br />
      <%= f.text_field :filv_name, class:"input-default", id:"filv_name",  maxlength:"20" %>
     </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="r-actions">
+    <%= f.submit "新規登録する" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
