@@ -104,6 +104,22 @@ footer {
 
 /********************************/
 
+.sign-up-title {
+  margin: 20px; 
+}
+
+.r-field {
+  margin-bottom: 10px; 
+  margin-left: 20px; 
+}
+
+.r-actions {
+  margin: 20px; 
+  margin-left: 20px; 
+}
+
+/********************************/
+
 .wrapper {
   display: flex;
 }
