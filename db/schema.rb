@@ -63,7 +63,6 @@ ActiveRecord::Schema.define(version: 2023_02_16_144924) do
   create_table "user_ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "rating_id", null: false
-    t.datetime "first_rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["rating_id"], name: "index_user_ratings_on_rating_id"

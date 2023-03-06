@@ -1,15 +1,17 @@
 class RatingsController < ApplicationController
-
   before_action :authenticate_user!
 
   def create
-
     current_user_filv = current_user.filv
-    current_user_filv.update(
-      strength: current_user_filv.strength + 1,
-      intelligence: current_user_filv.intelligence + 1,
-      charisma: current_user_filv.charisma + 1
-    )
+
+    # 既にratingが存在する場合、filvは上がらないように条件分岐
+    if current_user.ratings.find_by(review_id: params[:review_id]).nil?
+      current_user_filv.update(
+        strength: current_user_filv.strength + 1,
+        intelligence: current_user_filv.intelligence + 1,
+        charisma: current_user_filv.charisma + 1
+      )
+    end
 
     @review = Review.find(params[:review_id])
     @rating = current_user.ratings.find_by(review_id: @review.id)
