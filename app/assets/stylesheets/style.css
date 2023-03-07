@@ -458,6 +458,8 @@ footer {
   font-weight: bold;
 }
 
+/********************************/
+
 
 .my-reviews {
   background-color: #f7e7cb;
@@ -468,14 +470,14 @@ footer {
   align-items: center;
   }
   
-  
-  .review {
-  background-color: #fff;
+ .my-review {
+  background-color: #f2f2f2;
   width: 700px;
+  height: auto;
+  margin: 10px 0 10px;
   padding: 0 20px 20px 20px;
   box-shadow: 2px 2px 2px #ccc;
   border-radius: 10px;
-  margin-bottom: 20px;
   }
   
   .my-movie-title {
