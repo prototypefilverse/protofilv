@@ -297,9 +297,10 @@ footer {
 }
 
 .review {
-  width: 650px;
+  width: 700px;
   height: 250px;
-  margin: 20px;
+  margin: 10px 0 10px;
+  padding: 10px 20px 10px 20px;
   box-shadow: 2px 2px 10px rgb(178, 129, 45);
   border-radius: 10px;
   overflow: hidden;
@@ -307,7 +308,6 @@ footer {
   margin-bottom: 20px;
   overflow: auto;
 }
-
 
 .review_title {
   font-size: 20px;
@@ -325,7 +325,7 @@ footer {
 .review_review {
   background-color: #FFF9C4;
   border: 1px solid #FFC107;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
@@ -458,6 +458,8 @@ footer {
   font-weight: bold;
 }
 
+/********************************/
+
 
 .my-reviews {
   background-color: #f7e7cb;
@@ -468,14 +470,14 @@ footer {
   align-items: center;
   }
   
-  
-  .review {
-  background-color: #fff;
+ .my-review {
+  background-color: #f2f2f2;
   width: 700px;
+  height: auto;
+  margin: 10px 0 10px;
   padding: 0 20px 20px 20px;
   box-shadow: 2px 2px 2px #ccc;
   border-radius: 10px;
-  margin-bottom: 20px;
   }
   
   .my-movie-title {
