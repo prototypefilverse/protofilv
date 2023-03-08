@@ -108,6 +108,9 @@ Basic認証 PASS：0903
 
 # テーブル設計
 
+## ER図
+<img src="https://i.gyazo.com/4653a87e0172f8098025941d1206abd3.png" width="50%">
+
 ## users テーブル
 
 | Column             | Type          | Options     |
