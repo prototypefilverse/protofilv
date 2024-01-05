@@ -4,7 +4,7 @@ class FilvsController < ApplicationController
 
     if params[:movie_id].present?
       @movie = Movie.find(params[:movie_id]) 
-      @reviews = @movie.reviews.order("RANDAM()").limit(10)
+      @reviews = @movie.reviews.order("RAND()").limit(10)
     end
   
     if user_signed_in?
