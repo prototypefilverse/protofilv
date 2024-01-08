@@ -14,7 +14,7 @@ FilVerse(フィルバース) 試作
 ・アバターは別の世界で戦ったり、交流をしたりする。
 
 # URL
-https://protofilv.onrender.com  
+http://52.68.141.51/  
 
 # テスト用アカウント
 Basic認証 ID：mrkw  
