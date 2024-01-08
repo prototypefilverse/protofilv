@@ -15,11 +15,12 @@ FilVerse(フィルバース) 試作
 
 # URL
 http://52.68.141.51/  
-
-# テスト用アカウント
 Basic認証 ID：mrkw  
 Basic認証 PASS：0903  
+
+# テスト用アカウント
 メールアドレス：sample@gmail.com  
+パスワード：123456  
 メールアドレス：sample2@gmail.com  
 パスワード：123abc  
 
