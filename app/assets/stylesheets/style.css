@@ -530,7 +530,7 @@ footer {
     position: relative;
     width: 100%;
     height: 200px; // フィールドの高さを適宜調整してください。
-    background: image-url('field.png') no-repeat center center;
+    background: url('/assets/field.png') no-repeat center center;
     background-size: cover;
   }
   
