@@ -529,7 +529,7 @@ footer {
   .field-side {
     position: relative;
     width: 100%;
-    height: 200px; // フィールドの高さを適宜調整してください。
+    height: 400px; // フィールドの高さを適宜調整してください。
     background: image-url('field.png') no-repeat center center;
     background-size: cover;
     background-color: #ff5252;
