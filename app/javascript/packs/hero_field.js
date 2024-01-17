@@ -1,14 +1,20 @@
-
-
+// hero_field.js
 document.addEventListener('turbolinks:load', () => {
-  const heroAvatar = document.querySelector('.yuusya_image');
+  const heroField = document.getElementById('hero-field');
+  const hero = document.getElementById('hero');
 
-  if (heroAvatar) {
-    heroAvatar.addEventListener('click', (e) => {
-      e.preventDefault(); // デフォルトのリンクの動作を防ぎます
-      alert('勇者が活躍を始めました！');
-      // ここに他のアクションやアニメーションを追加できます
-    });
+  function moveHero(event) {
+    // マウスクリックの位置を取得
+    const newX = event.clientX - heroField.getBoundingClientRect().left;
+    const newY = event.clientY - heroField.getBoundingClientRect().top;
+
+    // 勇者の位置を更新
+    hero.style.left = `${newX}px`;
+    hero.style.top = `${newY}px`;
   }
+
+  // フィールドがクリックされたら勇者を移動
+  heroField.addEventListener('click', moveHero);
 });
+
 
