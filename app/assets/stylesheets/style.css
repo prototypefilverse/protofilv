@@ -526,20 +526,4 @@ footer {
   background-color: #ff3333;
   }
 
-  .field-side {
-    position: relative;
-    width: 100%;
-    height: 400px; // フィールドの高さを適宜調整してください。
-    background: url('path_to_your_field_background_image.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  
-  // 勇者のスタイル
-  .hero-avatar {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    // アバター画像のサイズはここで調整します。
-  }
-  
+ 

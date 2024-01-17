@@ -9,16 +9,16 @@
 
     <div class="filv_name">
      <%= @filv.user.filv_name %></p>
+     
+    </div>    <div class="field-side">
+       hh
+    </div>
 
     <div class="status">
       <p class="status__title">Strength: <%= @filv.strength %></p>
       <p class="status__title">Intelligence: <%= @filv.intelligence %></p>
       <p class="status__title">Charisma: <%= @filv.charisma %></p>
     </div> 
-
-    </div>    <div class="field-side">
-       <%= javascript_pack_tag 'field', 'data-turbolinks-track': 'reload' %>
-    </div>
 
       <% else %>
 
