@@ -7,15 +7,15 @@
      <%= link_to image_tag("yuusya.png", size:"240x220" ), "#" %>
     </div> 
 
-    <div class="filv_name">
-     <%= @filv.user.filv_name %></p>
-    </div> 
-
 <div id="hero-field" class="hero-field">
   <div id="hero" class="hero">
     <%= image_tag("yuusya.png", alt: "勇者の画像", width: "220") %>
   </div>
 </div>
+
+    <div class="filv_name">
+     <%= @filv.user.filv_name %></p>
+    </div> 
 
     <div class="status">
       <p class="status__title">Strength: <%= @filv.strength %></p>
