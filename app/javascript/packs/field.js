@@ -1,9 +1,10 @@
+import heroImage from 'images/yuusya.png'; // webpackerを使っている場合
+
 document.addEventListener('turbolinks:load', () => {
   const field = document.querySelector('.field-side');
   if (field) {
-    // 勇者が活躍するフィールドに関連するJavaScriptコードをここに配置
     const heroAvatar = document.createElement('img');
-    heroAvatar.src = '../../assets/images/yuusya.png'; // Railsのアセットパイプラインを使わない場合の相対パス
+    heroAvatar.src = heroImage; // importした画像パスを使用
     heroAvatar.classList.add('hero-avatar');
     field.appendChild(heroAvatar);
 
