@@ -532,6 +532,7 @@ footer {
     height: 400px; // フィールドの高さを適宜調整してください。
     background: url('path_to_your_field_background_image.jpg') no-repeat center center;
     background-size: cover;
+    background-color: #ff5252;
   }
   
   // 勇者のスタイル
