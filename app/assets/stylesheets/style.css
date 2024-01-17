@@ -525,3 +525,15 @@ footer {
   .my-review-delete:hover {
   background-color: #ff3333;
   }
+
+  .field-side {
+    width: 50%; /* 画面の左半分を使用 */
+    height: 100vh; /* 画面の高さに合わせて設定 */
+    position: fixed; /* 固定位置 */
+    left: 0; /* 左側に配置 */
+    top: 0; /* 上部から0の位置に配置 */
+    z-index: 10; /* 他の要素より前面に表示 */
+    background: url('path_to_your_field_background_image.png') no-repeat center center; /* フィールドの背景画像 */
+    background-size: cover; /* 背景画像がコンテナを覆うように設定 */
+  }
+  
