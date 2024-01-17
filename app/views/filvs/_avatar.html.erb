@@ -7,9 +7,6 @@
      <%= link_to image_tag("yuusya.png", size:"240x220" ), "#" %>
     </div> 
 
-        <!-- ゲームフィールドを描画するcanvas要素を追加 -->
-    <canvas id="gameField" width="480" height="320"></canvas>
-
     <div class="filv_name">
      <%= @filv.user.filv_name %></p>
 
@@ -18,6 +15,10 @@
       <p class="status__title">Intelligence: <%= @filv.intelligence %></p>
       <p class="status__title">Charisma: <%= @filv.charisma %></p>
     </div> 
+
+    </div>    <div class="field-side">
+       <%= javascript_pack_tag 'field', 'data-turbolinks-track': 'reload' %>
+    </div>
 
       <% else %>
 

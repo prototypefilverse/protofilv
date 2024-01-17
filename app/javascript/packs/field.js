@@ -1,19 +1,12 @@
-// /Users/morikawa/projects/protofilv/app/javascript/avatarField.js
-
 document.addEventListener('turbolinks:load', () => {
-  const canvas = document.getElementById('gameField');
-  if (canvas) {
-    const ctx = canvas.getContext('2d');
+  const field = document.querySelector('.field-side');
+  if (field) {
+    // 勇者が活躍するフィールドに関連するJavaScriptコードをここに配置
+    const heroAvatar = document.createElement('img');
+    heroAvatar.src = '../../assets/images/yuusya.png'; // Railsのアセットパイプラインを使わない場合の相対パス
+    heroAvatar.classList.add('hero-avatar');
+    field.appendChild(heroAvatar);
 
-    // 勇者アバターの画像を読み込む
-    const heroImage = new Image();
-    heroImage.src = 'path_to_yuusya_image'; // 勇者の画像へのパスを指定
-
-    heroImage.onload = () => {
-      ctx.drawImage(heroImage, 0, 0, 50, 50); // 勇者をキャンバスに描画
-    };
-
-    // TODO: ここで勇者の動きやゲームロジックを追加
+    // その他のフィールドの動作に関するスクリプト
   }
 });
-
