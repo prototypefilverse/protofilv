@@ -5,13 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function moveHero(event) {
     // フィールドの位置とサイズを取得
     const fieldRect = heroField.getBoundingClientRect();
-    
-    // ボーダーを含めたヒーローの全幅と全高を取得
-    const heroWidth = hero.offsetWidth;  // ボーダーを含むヒーローの幅
-    const heroHeight = hero.offsetHeight; // ボーダーを含むヒーローの高さ
+    // 表示される画像のサイズを取得（ここではHTMLで設定されたサイズを使用）
+    const heroWidth = 80;  // 表示領域の幅
+    const heroHeight = 64; // 表示領域の高さ
 
-    // クリック位置からフィールドのオフセットを引き、
-    // ヒーローの画像の中心がクリック点に合うように調整
+    // クリック位置からフィールドのオフセットと画像サイズの半分を引いて、勇者の新しい位置を計算
     const newX = event.clientX - fieldRect.left - (heroWidth / 2);
     const newY = event.clientY - fieldRect.top - (heroHeight / 2);
 
@@ -19,12 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const finalX = Math.max(0, Math.min(fieldRect.width - heroWidth, newX));
     const finalY = Math.max(0, Math.min(fieldRect.height - heroHeight, newY));
 
-    // ヒーローの位置を更新
+    // 勇者の位置を更新
     hero.style.left = `${finalX}px`;
     hero.style.top = `${finalY}px`;
   }
 
-  // ヒーローフィールドにイベントリスナーを設定
   heroField.addEventListener('click', moveHero);
 });
 
