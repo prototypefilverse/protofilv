@@ -158,7 +158,8 @@ footer {
   display: flex; 
   justify-content: space-around; 
   align-items: center; 
-  margin-top: 30px;
+  margin-top: 2px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: normal;
   text-align: center;
@@ -543,8 +544,6 @@ footer {
   background-size: cover; /* 背景画像をフィールドに合わせて調整 */
   background-position: center; /* 背景画像を中央に配置 */
   cursor: pointer; /* クリック可能であることを示す */
-  
-  
 }
 
 /* 勇者のスタイル */
