@@ -145,7 +145,7 @@ footer {
 .yuusya_image {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 2px;
   margin-left: 15px;
 }
 
@@ -158,15 +158,15 @@ footer {
   display: flex; 
   justify-content: space-around; 
   align-items: center; 
-  margin-top: 2px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   text-align: center;
   background-color: #e4e6f2;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #333;
+  box-shadow: 5px 5px 10px rgb(109, 107, 107);
 }
 
 .status__item {
@@ -537,8 +537,8 @@ footer {
   /* 勇者のフィールドのスタイル */
 .hero-field {
   position: relative;
-  width: 480px;
-  height: 420px; /* 適宜調整してください */
+  width: 360px;
+  height: 300px; /* 適宜調整してください */
   background-color: #eef; /* フィールドの背景色、背景画像があれば不要 */
   background-image: url('field.png'); /* 画像のURLを指定 */
   background-size: cover; /* 背景画像をフィールドに合わせて調整 */
@@ -551,7 +551,6 @@ footer {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
 }
 
 .hero img {

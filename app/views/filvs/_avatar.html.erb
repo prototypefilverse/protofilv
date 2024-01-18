@@ -10,18 +10,17 @@
    <%= @filv.user.filv_name %></p>
   </div> 
 
-  <div class="status">
-   <span class="status__item">Strength: <%= @filv.strength %></span>
-   <span class="status__item">Intelligence: <%= @filv.intelligence %></span>
-   <span class="status__item">Charisma: <%= @filv.charisma %></span>
-  </div>
-
   <div id="hero-field" class="hero-field">
    <div id="hero" class="hero">
     <%= image_tag("yuusya.png", alt: "勇者の画像",size:"80x64") %>
    </div>
   </div>
-
+  
+  <div class="status">
+   <span class="status__item">Strength: <%= @filv.strength %></span>
+   <span class="status__item">Intelligence: <%= @filv.intelligence %></span>
+   <span class="status__item">Charisma: <%= @filv.charisma %></span>
+  </div>
 
  <% else %>
 
