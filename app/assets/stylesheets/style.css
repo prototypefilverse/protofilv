@@ -549,11 +549,35 @@ footer {
 /* 勇者のスタイル */
 .hero {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 20%;
+  left: 30%;
 }
 
 .hero img {
   width: 80px; /* 画像の幅を80pxに固定 */
   height: 64px; /* 画像の高さを64pxに固定 */
+}
+
+.monster {
+  position: absolute;
+  top: 30%; /* 位置は調整してください */
+  left: 60%;
+}
+
+.monster img {
+  width: 40px; /* 画像サイズは適宜調整 */
+  height: 32px;
+}
+
+.battle-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0000; /* 色はお好みで */
+  font-size: 2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 10; /* 他の要素の上に表示 */
 }

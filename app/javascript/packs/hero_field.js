@@ -1,6 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   const heroField = document.getElementById('hero-field');
   const hero = document.getElementById('hero');
+  const monster = document.getElementById('monster');
+  
+
+    // 衝突を検出する関数
+    function isCollision(heroRect, monsterRect) {
+      return (
+        heroRect.x < monsterRect.x + monsterRect.width &&
+        heroRect.x + heroRect.width > monsterRect.x &&
+        heroRect.y < monsterRect.y + monsterRect.height &&
+        heroRect.y + heroRect.height > monsterRect.y
+      );
+    }
+
+    function startBattle() {
+      const message = document.getElementById('battle-message');
+      message.style.display = 'block';
+      message.style.opacity = 1;
+  
+      // メッセージを数秒後にフェードアウト
+      setTimeout(() => {
+        message.style.opacity = 0;
+        // フェードアウト後にメッセージを隠す
+        setTimeout(() => {
+          message.style.display = 'none';
+        }, 1000);
+      }, 2000);
+    }
   
   function moveHero(event) {
     // フィールドの位置とサイズを取得
@@ -20,6 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // 勇者の位置を更新
     hero.style.left = `${finalX}px`;
     hero.style.top = `${finalY}px`;
+
+    const heroRect = hero.getBoundingClientRect();
+    const monsterRect = monster.getBoundingClientRect();
+
+        // 衝突が発生した場合、バトルを開始
+        if (isCollision(heroRect, monsterRect)) {
+          startBattle();
+        }
+
   }
 
   heroField.addEventListener('click', moveHero);

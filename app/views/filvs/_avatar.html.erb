@@ -3,7 +3,7 @@
  <% if user_signed_in? %>
     
   <div class="yuusya_image">
-   <%= link_to image_tag("yuusya.png", size:"120x110" ), "#" %>
+   <%= link_to image_tag("yuusya.png", size:"110x90" ), "#" %>
   </div>
 
   <div class="filv_name">
@@ -12,8 +12,15 @@
 
   <div id="hero-field" class="hero-field">
    <div id="hero" class="hero">
-    <%= image_tag("yuusya.png", alt: "勇者の画像",size:"80x64") %>
+    <%= image_tag("yuusya.png", alt: "勇者の画像") %>
    </div>
+      <div id="monster" class="monster">
+    <%= image_tag("monster.png", alt: "モンスターの画像") %>
+   </div>
+  </div>
+
+  <div id="battle-message" class="battle-message" style="display: none;">
+   バトル開始！
   </div>
   
   <div class="status">
