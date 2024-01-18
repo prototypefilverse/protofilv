@@ -4,12 +4,12 @@
     
     <div class="yuusya_image">
     
-     <%= link_to image_tag("yuusya.png", size:"240x220" ), "#" %>
+     <%= link_to image_tag("yuusya.png", size:"120x110" ), "#" %>
     </div>
 
 <div id="hero-field" class="hero-field">
   <div id="hero" class="hero">
-    <%= image_tag("yuusya.png", alt: "勇者の画像", size:"240x220") %>
+    <%= image_tag("yuusya.png", alt: "勇者の画像",size:"80x64") %>
   </div>
 </div>
 
@@ -17,11 +17,11 @@
      <%= @filv.user.filv_name %></p>
     </div> 
 
-    <div class="status">
-      <p class="status__title">Strength: <%= @filv.strength %></p>
-      <p class="status__title">Intelligence: <%= @filv.intelligence %></p>
-      <p class="status__title">Charisma: <%= @filv.charisma %></p>
-    </div> 
+<div class="status">
+  <span class="status__item">Strength: <%= @filv.strength %></span>
+  <span class="status__item">Intelligence: <%= @filv.intelligence %></span>
+  <span class="status__item">Charisma: <%= @filv.charisma %></span>
+</div>
 
       <% else %>
 
