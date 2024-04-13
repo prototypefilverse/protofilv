@@ -68,7 +68,7 @@ Basic認証 PASS：0903
 ログイン前のページ   
 ・新規登録できる  
 ・ログインできる  
-<img src="https://i.gyazo.com/80e0d3fd64518ae9f94381fcf397532c.png" width="50%">
+<img src="https://i.gyazo.com/6f5b708ef624b0f34a8c726358086b6b.png" width="50%">
 
 ログイン後のページ  
 ・映画選択  
