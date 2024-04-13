@@ -74,12 +74,12 @@ Basic認証 PASS：0903
 ・映画選択  
 ・レビュー一覧  
 ・投稿画面へ偏移  
-<img src="https://i.gyazo.com/0f882e8b5a03db1287abce91a4f59e74.gif" width="50%">  
+<img src="https://i.gyazo.com/1ffab002e7e037b7945aa1b1a496fa7f.gif" width="50%">  
 
 ・投稿したら投稿画面ボタンは消える  
 ・マイページに自分のレビュー一覧  
 ・レビュー削除  
-<img src="https://i.gyazo.com/17644eaa424cce490f30b56c130206de.gif" width="50%">  
+<img src="https://i.gyazo.com/af94c7450c8c0b643aefde34614be4ea.gif" width="50%">  
 
 ・他のレビュアーのレビューに３つの項目を1〜5点を選択して評価投稿する  
 ・レビューを投稿したユーザーは、評価された点数分、アバターのパラメータが上がる  
