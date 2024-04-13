@@ -88,7 +88,8 @@ Basic認証 PASS：0903
 
 # 実装予定の機能
 ・アバターが活躍するフィールドの実装  
-<img src="https://i.gyazo.com/ff6cbd4d61505b905f50b65de8ef4772.gif" width="50%">
+<img src="https://i.gyazo.com/4e195ffdfe36b3c92eb83fc06315ad6a.gif" width="50%">
+
 ・フィールドで実績を積むと「どのレビューが高評価を獲得しているかの情報」が手に入る、など  
 ・映画検索機能  
 
